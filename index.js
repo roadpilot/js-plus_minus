@@ -28,7 +28,12 @@ function readLine() {
 
 function plusMinus(arr) {
     // Write your code here
-
+    const pos = arr.filter(el => el > 0).length
+    const neg = arr.filter(el => el < 0).length
+    const zer = arr.filter(el => el === 0).length
+    console.log(pos/arr.length)
+    console.log(neg/arr.length)
+    console.log(zer/arr.length)
 }
 
 function main() {
